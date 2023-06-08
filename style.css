@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @media (max-width: 768px) {
   .sticky-top {
     position: -webkit-sticky;
@@ -11,18 +15,25 @@
   }
 }
 
+@media (min-width: 768px) {
+  #sidebarMenu {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
 html, body, .container-fluid {
   height: 100%;
 }
 
 .bg-content {
-  background-color: #e9ecef; /* adjust as needed */
-  overflow-y: auto;
+  background-color: #FAFAFA; /* adjust as needed */
 }
 
 
 .main-content {
-  min-height: 90vh; /* adjust as needed */
+  height: 100%; /* adjust as needed, accounting for the navbar height */
+  overflow-y: hidden;
 }
 
 .head-icon {
@@ -32,4 +43,9 @@ html, body, .container-fluid {
 
 .link-icon {
   font-size: 18px !important;
+}
+
+.full-screen {
+  height: 100%;
+  width: 100%;
 }
