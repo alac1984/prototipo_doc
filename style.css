@@ -49,3 +49,14 @@ html, body, .container-fluid {
   height: 100%;
   width: 100%;
 }
+
+.biz-ex-wrapper .row {
+  background-color: #FAFAFA !important;
+  border: 0 !important;
+  padding: 20px !important;
+} 
+
+#content-target {
+  width: 100%;
+  height: 100vh;
+}

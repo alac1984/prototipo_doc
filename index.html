@@ -33,7 +33,7 @@
             <hr>
             <ul class="nav flex-column">
               <li class="nav-item bg-primary p-2">
-                <a class="nav-link text-white d-inline p-1" aria-current="page" href="#">
+                <a class="nav-link text-white d-inline p-1" hx-get="iframe.html" hx-target="#content-target" aria-current="page" href="#">
                   <i class="bi-terminal-fill p-1 link-icon d-inline"></i>
                   Dashboard
                 </a>
@@ -49,7 +49,7 @@
 
         <!-- Main content area -->
         <main class="col-md-8 col-lg-9 bg-content main-content">
-          <iframe class="full-screen" src="processo/index.html"></iframe>
+          <div id="content-target"></div>
         </main>
       </div>
     </div>
