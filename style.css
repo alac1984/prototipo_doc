@@ -1,22 +1,35 @@
-.center-div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    background: rgba(255, 255, 255, 0.5);
+@media (max-width: 768px) {
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
   }
-  .colored-div {
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
+
+  .navbar {
+    height: 10vh; /* adjust as needed */
   }
-  .bg-color-1 {
-    background-color: #FFC09F;
-  }
-  .bg-color-2 {
-    background-color: #FFEE93;
-  }
-  .bg-color-3 {
-    background-color: #A0CED9;
-  }
+}
+
+html, body, .container-fluid {
+  height: 100%;
+}
+
+.bg-content {
+  background-color: #e9ecef; /* adjust as needed */
+  overflow-y: auto;
+}
+
+
+.main-content {
+  min-height: 90vh; /* adjust as needed */
+}
+
+.head-icon {
+  font-size: 25px !important;
+}
+
+
+.link-icon {
+  font-size: 18px !important;
+}
