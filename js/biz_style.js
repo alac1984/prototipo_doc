@@ -3,5 +3,6 @@ render_frame.onload = () => {
     let biz_wrapper = render_frame.contentWindow.document.getElementsByClassName('biz-ex-wrapper');
     biz_wrapper[0].style.backgroundColor = '#fafafa';
     biz_wrapper[0].style.border = '0';
-    biz_wrapper[0].style.padding = '20px';
+    biz_wrapper[0].style.paddingLeft = '20px';
+    biz_wrapper[0].style.paddingRight = '20px';
 };
