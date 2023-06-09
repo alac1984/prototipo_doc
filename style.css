@@ -33,7 +33,7 @@ html, body, .container-fluid {
 
 .main-content {
   height: 100%; /* adjust as needed, accounting for the navbar height */
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .head-icon {

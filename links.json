@@ -1,0 +1,28 @@
+{
+    "Vendas": {
+      "icon": "bi-alarm",
+      "link": "/paginas/vendas.html",
+      "processos": {
+        "Nacionais": "/processos/vendas-internas/index.html",
+        "Internacionais": "/processos/vendas-externas/index.html"
+      }
+    },
+    "Marketing": {
+      "icon": "bi-bag",
+      "link": "/paginas/marketing.html",
+      "processos": {
+        "Relacionamento": "/processos/marketing-relac/index.html",
+        "Social": "/processos/marketing-social/index.html",
+        "Direto": "/processos/marketing-direto/index.html"
+      }
+    },
+    "Contabilidade": {
+      "icon": "bi-camera",
+      "link": "/paginas/contabilidade.html",
+      "processos": {
+        "Bancária": "/processos/cont-bancaria/index.html",
+        "Financeira": "/processos/cont-financeira/index.html",
+        "Fiscal": "/processos/cont-fiscal/index.html"
+      }
+    }
+}

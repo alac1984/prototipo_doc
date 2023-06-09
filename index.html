@@ -25,36 +25,64 @@
         <!-- Sidebar/menu area -->
         <nav id="sidebarMenu" class="col-md-4 col-lg-3 d-md-block navbar-dark text-white bg-dark sidebar collapse">
           <div class="position-sticky pt-3">
-
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <i class="bi-book p-3 head-icon"></i>
               <span class="fs-4">Documentação</span>
             </a>
             <hr>
-            <ul class="nav flex-column">
+            <ul id="sidebarList" class="nav flex-column">
               <li class="nav-item bg-primary p-2">
-                <a class="nav-link text-white d-inline p-1" hx-get="iframe.html" hx-target="#content-target" aria-current="page" href="#">
-                  <i class="bi-terminal-fill p-1 link-icon d-inline"></i>
-                  Dashboard
+                <a class="nav-link text-white d-inline p-1" hx-get="paginas/vendas.html" hx-target="#content-target" aria-current="page" href="#">
+                  <i class="bi-award-fill p-1 link-icon d-inline"></i>
+                  Vendas
                 </a>
               </li>
               <li class="nav-item p-2">
-                <i class="bi-subtract p-1 link-icon d-inline"></i>
-                <a class="nav-link text-white d-inline p-1" href="#">Reports</a>
+                <a class="nav-link text-white d-inline p-1" hx-get="paginas/marketing.html" hx-target="#content-target" aria-current="page" href="#">
+                  <i class="bi-award-fill p-1 link-icon d-inline"></i>
+                  Marketing
+                </a>
               </li>
-              <!-- Add more menu items as needed -->
+              <li class="nav-item p-2">
+                <a class="nav-link text-white d-inline p-1" hx-get="paginas/contabilidade.html" hx-target="#content-target" aria-current="page" href="#">
+                  <i class="bi-award-fill p-1 link-icon d-inline"></i>
+                  Contabilidade
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
 
         <!-- Main content area -->
         <main class="col-md-8 col-lg-9 bg-content main-content">
-          <div id="content-target"></div>
+          <div id="content-target">
+
+            <div class="px-4 py-5 my-5 text-center">
+              <img class="d-block mx-auto mb-4" src="img/book.gif" alt="" width="200" height="200">
+              <h1 class="display-5 fw-bold">Documentação dos Processos</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">
+                Bem-vindo à nossa plataforma online para documentação BPMN de processos empresariais. Facilitamos a otimização do seu negócio, apresentando fluxos de trabalho visuais e intuitivos em áreas como vendas, marketing e contabilidade. Utilize nossas ferramentas para melhorar a eficiência da sua empresa.
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </div>
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/htmx.org@1.9.2" integrity="sha384-L6OqL9pRWyyFU3+/bjdSri+iIphTN/bvYyM37tICVyOJkWZLpP2vGn6VUEXgzg6h" crossorigin="anonymous"></script>
+    <!-- <script src="js/link_handle.js"></script> -->
+    <!-- <script> -->
+      <!--   fetch('links.json') -->
+        <!--     .then(response => response.json()) -->
+        <!--     .then(data => populateSidebarList(data)) -->
+        <!--     .catch(error => console.error('Error:', error)); -->
+        <!-- </script> -->
   </body>
 </html>
